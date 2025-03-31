@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manus AI Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manus AI Platform</h1>
+        
+        <div class="provider-selection">
+            <h2>Select AI Provider</h2>
+            <select id="provider-select">
+                <option value="openai">OpenAI</option>
+                <option value="anthropic">Anthropic</option>
+                <option value="bedrock">AWS Bedrock</option>
+                <option value="azure">Azure OpenAI</option>
+            </select>
+        </div>
+        
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages"></div>
+            
+            <div class="input-area">
+                <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
